@@ -1,0 +1,95 @@
+/* Bootstrap overloads */
+
+:root {
+  --red: #ee1111;
+}
+
+nav.navbar {
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+}
+
+.separator {
+  display: block;
+  width: 100%;
+  height: 10px;
+}
+
+.dark-bg {
+    background: url("./dark_exa.png");
+    background-size: cover;
+}
+
+.light-bg {
+  background-color: #eee;
+}
+
+.gray-bg {
+  background-color: #c9c9c9;
+}
+
+.red-bg {
+  background-color: #ee1111;
+}
+
+.page {
+    min-height: 100vh !important;
+    overflow: hidden;
+}
+
+.centered-90 {
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.cover-slider {
+  border-width: 3px;
+  border-style: solid;
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--red)), to(rgba(248, 16, 16, 0))) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(var(--red), rgba(248, 16, 16, 0)) 1 100%;
+  -moz-border-image: -moz-linear-gradient(var(--red), rgba(248, 16, 16, 0)) 1 100%;
+  -o-border-image: -o-linear-gradient(var(--red), rgba(248, 16, 16, 0)) 1 100%;
+  border-image: linear-gradient(to bottom, var(--red), rgba(248, 16, 16, 0)) 1 100%;
+}
+
+.cover-slider div {
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  height: 30vw;
+  width: 100%;
+}
+
+.cover-slider .img-1 {
+  background: url("http://placehold.it/2000x1000");
+}
+
+.cover-slider .img-2 {
+  background: url("http://placehold.it/2001x1000");
+}
+
+
+.cover-slider .img-3 {
+  background: url("http://placehold.it/2002x1000");
+}
+
+
+.cover-slider .img-4 {
+  background: url("http://placehold.it/2003x1000");
+}
+
+
+.cover-slider .img-5 {
+  background: url("http://placehold.it/2004x1000");
+}
+
+
+.cover-slider .img-6 {
+  background: url("http://placehold.it/2005x1000");
+}
+
+.padded-cols [class*="col-"] {
+    background-clip: padding-box;
+    border: 10px solid transparent;
+}
