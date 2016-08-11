@@ -4,9 +4,21 @@
   --red: #ee1111;
 }
 
+.header{
+  height:8vh;
+  width:100%;
+  background-color:white;
+}
+
+.logo{
+  height:100%;
+  width:auto;
+}
+
 nav.navbar {
   margin-bottom: 0 !important;
   border-radius: 0 !important;
+  height: 3vh;
 }
 
 .separator {
