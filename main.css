@@ -12,21 +12,27 @@
 
 .logo{
   height:100%;
-  width:auto;
+  width: 13.1vh;
 }
 
-.logo-container{
+.logo-container {
   width:90%;
   height:100%;
   max-width:2000px;
   margin:auto;
 }
 
+.link-container {
+	width: calc(90vw - 15vh);
+	display: inline-block;
+	text-align: right;
+}
+
 .header-link{
   margin-top:1.5vh;
   margin-right:20px;
-  float:right;
-  font-size:1.2vmin;
+  font-size:3vmin;
+  vertical-align: middle;
   color:red;
 }
 
@@ -38,33 +44,50 @@
   right:0;
 }
 
-nav.navbar {
+.navbar {
   margin-bottom: 0 !important;
   border-radius: 0 !important;
-  height: 3vh;
-  z-index:5;
-  width:100%;
 }
 
-.nav{
-  width:100%;
-  float:none;
-  text-align: center;
+@media (max-width: 770px) {
+  .nav.navbar-nav li a {
+    font-size: 4vw;
+  }
 }
 
-.nav > li{
-  width: 13vw;
-  min-width: 150px;
-  text-align: center;
-  display:inline-block;
-  float:none;
+@media (min-width: 770px) {
+  nav.navbar {
+    height: 3vh;
+    z-index:5;
+    width:100%;
+  }
+
+  .nav{
+    width:100%;
+    float:none;
+    text-align: center;
+  }
+
+  .nav > li{
+    width: 13vw;
+    min-width: 150px;
+    text-align: center;
+    display:inline-block;
+    float:none;
+  }
+
+  .container-fluid {
+    width:90%;
+    margin:auto;
+    font-family: "Graduate", cursive !important;
+  }
+
+  .nav > li > a, .dropdown-menu > li > a{
+    font-size: 1.4vw;
+  }
 }
 
-.container-fluid {
-  width:90%;
-  margin:auto;
-  font-family: "Graduate", cursive !important;
-}
+
 
 .navbar.affix{
   top:0;
