@@ -39,10 +39,9 @@ nav.navbar {
   top:0;
 }
 .red-bg.affix{
-  top:3.25vh;
+  top:3vh;
 }
 .affix {
-  position: fixed;
   z-index:5;
 }
 
