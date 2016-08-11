@@ -2,17 +2,20 @@
 
 :root {
   --red: #ee1111;
+  --white: #fff;
 }
 
-.header{
-  height:9vh;
-  width:100%;
-  background-color:white;
+.header {
+	height: 9vh;
+	width: 100%;
+	background-color: var(--white);
+	min-height: 50px;
 }
 
-.logo{
-  height:100%;
-  width: 13.1vh;
+.logo {
+	height: 100%;
+	width: 13.1vh;
+	min-width: 72px;
 }
 
 .logo-container {
@@ -26,12 +29,13 @@
 	width: calc(90vw - 15vh);
 	display: inline-block;
 	text-align: right;
+	max-width: calc(90vw - 90px);
 }
 
 .header-link{
   margin-top:1.5vh;
   margin-right:20px;
-  font-size:3vmin;
+  font-size:1.5rem;
   vertical-align: middle;
   color:red;
 }
@@ -48,46 +52,6 @@
   margin-bottom: 0 !important;
   border-radius: 0 !important;
 }
-
-@media (max-width: 770px) {
-  .nav.navbar-nav li a {
-    font-size: 4vw;
-  }
-}
-
-@media (min-width: 770px) {
-  nav.navbar {
-    height: 3vh;
-    z-index:5;
-    width:100%;
-  }
-
-  .nav{
-    width:100%;
-    float:none;
-    text-align: center;
-  }
-
-  .nav > li{
-    width: 13vw;
-    min-width: 150px;
-    text-align: center;
-    display:inline-block;
-    float:none;
-  }
-
-  .container-fluid {
-    width:90%;
-    margin:auto;
-    font-family: "Graduate", cursive !important;
-  }
-
-  .nav > li > a, .dropdown-menu > li > a{
-    font-size: 1.4vw;
-  }
-}
-
-
 
 .navbar.affix{
   top:0;
@@ -217,4 +181,89 @@ li{
   height: 300px;
   background: url("http://placehold.it/300x300");
   display: block !important;
+}
+
+
+@media (max-width: 770px) {
+  .nav.navbar-nav li a {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 770px) {
+  nav.navbar {
+    height: 3vh;
+    z-index:5;
+    width:100%;
+  }
+
+  .nav{
+    width:100%;
+    float:none;
+    text-align: center;
+  }
+
+  .nav > li{
+    width: 13vw;
+    min-width: 150px;
+    text-align: center;
+    display:inline-block;
+    float:none;
+  }
+
+  .container-fluid {
+    width:90%;
+    margin:auto;
+    font-family: "Graduate", cursive !important;
+  }
+
+  .nav > li > a, .dropdown-menu > li > a{
+    font-size: 1.4vw;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .cover-slider {
+    height: 60vh;
+  }
+
+  .cover-slider div {
+    height: 60vh !important;
+  }
+
+  .link-container {
+    display: none;
+  }
+
+  .header {
+    height: 15vh;
+    padding: 5px;
+  }
+
+  .logo {
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  nav.navbar {
+  	z-index: 100;
+  	width: 100%;
+  }
+
+  .separator {
+    display: none !important;
+  }
+
+  .cover-slider {
+    border-style: none !important;
+  }
+
+
+  .place-1140x400 {
+    background-attachment: local !important;
+    background-repeat: no-repeat !important;
+  }
 }
