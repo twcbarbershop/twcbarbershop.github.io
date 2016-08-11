@@ -15,6 +15,21 @@
   width:auto;
 }
 
+.logo-container{
+  width:90%;
+  height:100%;
+  max-width:2000px;
+  margin:auto;
+}
+
+.header-link{
+  margin-top:1.5vh;
+  margin-right:20px;
+  float:right;
+  font-size:1.2vmin;
+  color:red;
+}
+
 .test{
   float:right;
   height:100%;
