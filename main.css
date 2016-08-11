@@ -38,7 +38,7 @@ nav.navbar {
 }
 
 .nav > li{
-  width: 10vw;
+  width: 13vw;
   min-width: 150px;
   text-align: center;
   display:inline-block;
@@ -67,7 +67,7 @@ nav.navbar {
 }
 
 li{
-  font-size: 2vmin;
+  font-size: 1.5vmin;
   max-font-size: 4vw;
 }
 
