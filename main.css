@@ -173,3 +173,25 @@ li{
     background-clip: padding-box;
     border: 10px solid transparent;
 }
+
+.place-1140x400 {
+  background-attachment: fixed !important;
+  background-position: center !important;
+  height: 400px;
+  background: url("http://placehold.it/1140x400");
+  display: block !important;
+}
+
+.place-500x300 {
+  background-position: center !important;
+  height: 300px;
+  background: url("http://placehold.it/500x300");
+  display: block !important;
+}
+
+.place-300x300 {
+  background-position: center !important;
+  height: 300px;
+  background: url("http://placehold.it/300x300");
+  display: block !important;
+}
