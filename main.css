@@ -37,12 +37,14 @@ nav.navbar {
 }
 .navbar.affix{
   top:0;
+  z-index:5;
 }
 .red-bg.affix{
   top:3vh;
+  z-index:4;
 }
 .affix {
-  z-index:5;
+  position:fixed;
 }
 
 .navbar-header{
