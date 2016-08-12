@@ -26,10 +26,8 @@
 }
 
 .link-container {
-	width: calc(90% - 20vh);
-	display: inline-block;
+	width: calc(90% - 13.1vh);
   float:right;
-	text-align: right;
   height:100%;
 	max-width: calc(90vw - 90px);
 }
