@@ -26,9 +26,11 @@
 }
 
 .link-container {
-	width: calc(90vw - 15vh);
+	width: calc(90% - 20vh);
 	display: inline-block;
+  float:right;
 	text-align: right;
+  height:100%;
 	max-width: calc(90vw - 90px);
 }
 
@@ -37,6 +39,7 @@
   margin-right:20px;
   font-size:1.5rem;
   vertical-align: middle;
+  float:right;
   color:red;
 }
 
