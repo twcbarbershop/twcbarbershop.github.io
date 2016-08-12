@@ -169,6 +169,10 @@ li{
   background: url("http://placehold.it/2005x1000");
 }
 
+.col{
+  max-width:100%;
+}
+
 .padded-cols [class*="col-"] {
     background-clip: padding-box;
     border: 10px solid transparent;
