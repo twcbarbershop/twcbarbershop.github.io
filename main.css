@@ -113,6 +113,8 @@ li{
   margin-top:-3px;
   border-width: 3px;
   border-style: solid;
+  box-shadow: 0px 15px 10px #888888;
+
   -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--red)), to(rgba(248, 16, 16, 0))) 1 100%;
   -webkit-border-image: -webkit-linear-gradient(var(--red), rgba(248, 16, 16, 0)) 1 100%;
   -moz-border-image: -moz-linear-gradient(var(--red), rgba(248, 16, 16, 0)) 1 100%;
@@ -125,8 +127,12 @@ li{
   background-attachment: fixed !important;
   background-position: center !important;
   height: 30vw;
-  min-height:25vh;
+  min-height:20vh;
   width: 100%;
+}
+
+.slick-dots{
+  bottom: 25px;
 }
 
 .cover-slider .img-1 {
