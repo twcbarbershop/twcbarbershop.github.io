@@ -7,6 +7,7 @@
     <title>The Wright Cut</title>
 
     <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <!-- JQUERY -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script-->
@@ -74,20 +75,45 @@
   <div class="red-bg separator"></div>
 
   <div class="page light-bg centered-90">
-    <div class="cover-slider">
-      <div class="img-1"></div>
-      <div class="img-2"></div>
-      <div class="img-3"></div>
-      <div class="img-4"></div>
-      <div class="img-5"></div>
-      <div class="img-6"></div>
+    <div class="content">
+        <img class="main-image" src="about_main.jpg" />
+        <div class="h1 title">
+          ABOUT
+        </div>
+        <div class="p description">
+          The Wright Cut offers a platform that is unparalleled to its competitors, providing employment opportunities for both male and female professionals and student cosmetologists. The facility will provide an atmosphere that creates quality grade a service that will bring comfort and appreciation to its customers. in addition, the wright cut will enhance the academic, socialistic and economic growth of the entire Rutgers community. furthermore, it will be a place of fellowship for mentoring and guidance, between the customer and service provider.
+        </div>
+        <div class = "container sub-content">
+          <div class="row padded-cols">
+            <div class="col-xs-12 col-sm-5">
+              <img class="sub-image" src="about_sub_1.jpg" />
+            </div>
+            <div class="col-xs-12 col-sm-7">
+              <div class="h2 sub-title">
+                OUR STAFF
+              </div>
+              <div class="p description">
+                Our staff strives to bring you a perfect haircut every time.  We pride ourselves in exceptional customer service and attention to detail.
+              </div>
+            </div>
+          </div>
+          <div class="row padded-cols">
+            <div class="col-xs-12 col-sm-7">
+              <div class="h2 sub-title">
+                TIM WRIGHT
+              </div>
+              <div class="p description">
+                Tim Wright is a Superbowl winning tight end for the Detroit Lions.  Tim grew up in New Jersey and played football for Rutgers as a wide receiver. 
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+              <img class="sub-image" src="about_sub_2.jpg" />
+            </div>
+          </div>
+        </div>
+
     </div>
-
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 place-1140x400"></div>
-      </div>
-
       <div class="row padded-cols">
         <div class="col-xs-12 col-sm-5 gray-bg place-300x300"></div>
         <div class="col-xs-12 col-sm-7 gray-bg place-500x300"></div>
@@ -100,18 +126,6 @@
   </footer>
 
   <script type="text/javascript">
-    $('document').ready(function() {
-      $('.cover-slider').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-      });
-    });
-
     $(window).scroll(function() {
       if ($(this).scrollTop() > $('.header').height()){
         $('.navbar').addClass("affix");

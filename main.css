@@ -12,6 +12,24 @@
 	min-height: 50px;
 }
 
+.h1{
+  font-size: 3.5vmax !important;
+  font-family: "Graduate", cursive !important;
+}
+
+.h2{
+  font-size: 2.3vmax !important;
+  font-family: "Graduate", cursive !important;
+}
+
+.p{
+    font-family: "Arvo", serif;
+    font-size: 2.5vmin;
+    hyphens: auto;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
 .logo {
 	height: 100%;
 	width: 13.1vh;
@@ -107,6 +125,32 @@ li{
   max-width:2000px;
   margin: 0 auto;
 
+}
+
+.sub-content{
+  width:100% !important;
+}
+
+.main-image{
+  width:100%;
+  border: 20px solid transparent;
+}
+
+.sub-image{
+  width:100%;
+}
+
+.content{
+  width:100%;
+  margin:auto;
+}
+
+.title{
+  margin-left: 20px;
+}
+
+.description{
+  margin: 20px;
 }
 
 .cover-slider {
