@@ -70,14 +70,16 @@
 .navbar {
   margin-bottom: 0 !important;
   border-radius: 0 !important;
+  border-bottom-width:.5vmin;
+  border-bottom-color:red;
+  box-sizing: content-box;
 }
 
 .navbar.affix{
+  right:0;
   top:0;
-}
-.red-bg.affix{
-  top:3vh;
   z-index:4;
+  width:100%;
 }
 .affix {
   position:fixed;
@@ -151,6 +153,19 @@ li{
 
 .description{
   margin: 20px;
+}
+
+.form-container *{
+  width:100%;
+  font-family: "Arvo", serif;
+  font-size: 2.2vmin;
+}
+
+.submit{
+  margin: 20px;
+  font-family: "Arvo", serif;
+  font-size: 2.2vmin;
+  width: 30%;
 }
 
 .cover-slider {
