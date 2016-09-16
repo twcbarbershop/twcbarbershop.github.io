@@ -12,6 +12,30 @@
 	min-height: 50px;
 }
 
+.h1{
+  font-size: 3.5vmax !important;
+  font-family: "Graduate", cursive !important;
+}
+
+.h2{
+  font-size: 2.3vmax !important;
+  font-family: "Graduate", cursive !important;
+}
+
+.p{
+    font-family: "Arvo", serif;
+    font-size: 2.5vmin;
+    hyphens: auto;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.p2{
+    font-family: "Arvo", serif;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+
 .logo {
 	height: 100%;
 	width: 13.1vh;
@@ -26,9 +50,9 @@
 }
 
 .link-container {
-	width: calc(90vw - 15vh);
-	display: inline-block;
-	text-align: right;
+	width: calc(90% - 13.1vh);
+  float:right;
+  height:100%;
 	max-width: calc(90vw - 90px);
 }
 
@@ -37,6 +61,7 @@
   margin-right:20px;
   font-size:1.5rem;
   vertical-align: middle;
+  float:right;
   color:red;
 }
 
@@ -51,14 +76,16 @@
 .navbar {
   margin-bottom: 0 !important;
   border-radius: 0 !important;
+  border-bottom-width:.5vmin;
+  border-bottom-color:red;
+  box-sizing: content-box;
 }
 
 .navbar.affix{
+  right:0;
   top:0;
-}
-.red-bg.affix{
-  top:3vh;
   z-index:4;
+  width:100%;
 }
 .affix {
   position:fixed;
@@ -108,10 +135,52 @@ li{
 
 }
 
+.sub-content{
+  width:100% !important;
+}
+
+.main-image{
+  width:100%;
+  border: 20px solid transparent;
+}
+
+.sub-image{
+  width:100%;
+}
+
+.content{
+  width:100%;
+  margin:auto;
+}
+
+.title{
+  margin-left: 20px;
+}
+
+.description{
+  margin: 20px;
+}
+
+.form-container *{
+  width:100%;
+  font-family: "Arvo", serif;
+  font-size: 2.2vmin;
+}
+
+.submit{
+  margin: 20px;
+  font-family: "Arvo", serif;
+  font-size: 2.2vmin;
+  width: 30%;
+}
+
 .cover-slider {
   margin-top:-3px;
   border-width: 3px;
   border-style: solid;
+  border-bottom-style:none;
+  box-shadow: 0px 15px 10px #BFBFBF;
+
   -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--red)), to(rgba(248, 16, 16, 0))) 1 100%;
   -webkit-border-image: -webkit-linear-gradient(var(--red), rgba(248, 16, 16, 0)) 1 100%;
   -moz-border-image: -moz-linear-gradient(var(--red), rgba(248, 16, 16, 0)) 1 100%;
@@ -124,8 +193,12 @@ li{
   background-attachment: fixed !important;
   background-position: center !important;
   height: 30vw;
-  min-height:25vh;
+  min-height:20vh;
   width: 100%;
+}
+
+.slick-dots{
+  bottom: 25px;
 }
 
 .cover-slider .img-1 {
@@ -156,6 +229,10 @@ li{
   background: url("http://placehold.it/2005x1000");
 }
 
+.col{
+  max-width:100%;
+}
+
 .padded-cols [class*="col-"] {
     background-clip: padding-box;
     border: 10px solid transparent;
@@ -175,14 +252,31 @@ li{
   background: url("http://placehold.it/500x300");
   display: block !important;
 }
-
-.place-300x300 {
-  background-position: center !important;
-  height: 300px;
-  background: url("http://placehold.it/300x300");
+.connect{
+  height:300px;
+  line-height:300px;
+  background-color: #C8C8C8;
   display: block !important;
 }
 
+.contact{
+  padding-top:50px;
+  height:300px;
+  line-height:50px;
+  vertical-align:middle;
+  background-color: #C8C8C8;
+  display: block !important;
+}
+
+.icon{
+  height: 60px;
+  display: inline-block;
+  opacity: .75;
+}
+
+.icon:hover{
+  opacity: 1.0;
+}
 
 @media (max-width: 770px) {
   .nav.navbar-nav li a {
