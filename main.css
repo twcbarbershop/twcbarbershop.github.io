@@ -30,6 +30,12 @@
     text-align: justify;
 }
 
+.p2{
+    font-family: "Arvo", serif;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+
 .logo {
 	height: 100%;
 	width: 13.1vh;
@@ -246,14 +252,31 @@ li{
   background: url("http://placehold.it/500x300");
   display: block !important;
 }
-
-.place-300x300 {
-  background-position: center !important;
-  height: 300px;
-  background: url("http://placehold.it/300x300");
+.connect{
+  height:300px;
+  line-height:300px;
+  background-color: #C8C8C8;
   display: block !important;
 }
 
+.contact{
+  padding-top:50px;
+  height:300px;
+  line-height:50px;
+  vertical-align:middle;
+  background-color: #C8C8C8;
+  display: block !important;
+}
+
+.icon{
+  height: 60px;
+  display: inline-block;
+  opacity: .75;
+}
+
+.icon:hover{
+  opacity: 1.0;
+}
 
 @media (max-width: 770px) {
   .nav.navbar-nav li a {
