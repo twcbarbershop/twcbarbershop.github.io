@@ -24,7 +24,7 @@
     <script type="text/javascript" src="./slick/slick.min.js"></script>
 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body id="home" class="dark-bg">
@@ -74,21 +74,20 @@
   </nav>
 
   <div class="page light-bg centered-90">
-    <div class="cover-slider">
-      <div class="img-1"></div>
-      <div class="img-2"></div>
-      <div class="img-3"></div>
-      <div class="img-4"></div>
-      <div class="img-5"></div>
-      <div class="img-6"></div>
+    <div class="content">
+        <div class="h1 title">
+          CONTACT
+        </div>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCXZeY3M16XV9zmLlI-V3w9OVtoVyMF4T8&q=55+Rockefeller+Road+Unit+20,Piscataway,New+Jersey" allowfullscreen>
+        </iframe>
+        <div class="p description">
+        </div>
+
     </div>
-
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 place-1140x400"></div>
-      </div>
-
-      <div class="row padded-cols">
+      <div class="row padded-cols spacer">
         <div class="col-xs-12 col-sm-5 gray-bg connect">
             <center>
               <a href="https://www.facebook.com/twcbarbershop/"><img src="img/facebook.svg" class="icon"></a>
@@ -117,18 +116,6 @@
   </footer>
 
   <script type="text/javascript">
-    $('document').ready(function() {
-      $('.cover-slider').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-      });
-    });
-
     $(window).scroll(function() {
       if ($(this).scrollTop() > $('.header').height()){
         $('.navbar').addClass("affix");
