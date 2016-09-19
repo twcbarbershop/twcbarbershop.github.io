@@ -1,0 +1,78 @@
+.cover-slider {
+  margin-top:-3px;
+  border-width: 3px;
+  border-style: solid;
+  border-bottom-style:none;
+  box-shadow: 0px 15px 10px #BFBFBF;
+
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--red)), to(rgba(248, 16, 16, 0))) 1 100%;
+  -webkit-border-image: -webkit-linear-gradient(var(--red), rgba(248, 16, 16, 0)) 1 100%;
+  -moz-border-image: -moz-linear-gradient(var(--red), rgba(248, 16, 16, 0)) 1 100%;
+  -o-border-image: -o-linear-gradient(var(--red), rgba(248, 16, 16, 0)) 1 100%;
+  border-image: linear-gradient(to bottom, var(--red), rgba(248, 16, 16, 0)) 1 100%;
+}
+
+.cover-slider div {
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  height: 30vw;
+  min-height:20vh;
+  width: 100%;
+  border-style: none !important;
+}
+
+.slick-dots{
+  bottom: 25px;
+}
+
+.cover-slider .img-1 {
+  background: url("http://placehold.it/2000x1000");
+}
+
+.cover-slider .img-2 {
+  background: url("http://placehold.it/2001x1000");
+}
+
+
+.cover-slider .img-3 {
+  background: url("http://placehold.it/2002x1000");
+}
+
+
+.cover-slider .img-4 {
+  background: url("http://placehold.it/2003x1000");
+}
+
+
+.cover-slider .img-5 {
+  background: url("http://placehold.it/2004x1000");
+}
+
+
+.cover-slider .img-6 {
+  background: url("http://placehold.it/2005x1000");
+}
+
+.place-1140x400 {
+  background-attachment: fixed !important;
+  background-position: center !important;
+  height: 400px;
+  background: url("http://placehold.it/1140x400");
+  display: block !important;
+}
+
+@media (max-width: 480px) {
+  .cover-slider {
+    height: 60vh;
+  }
+
+  .cover-slider div {
+    height: 60vh !important;
+  }
+
+  .place-1140x400 {
+    background-attachment: local !important;
+    background-repeat: no-repeat !important;
+  }
+}
