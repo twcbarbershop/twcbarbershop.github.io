@@ -13,6 +13,9 @@
     <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+    <!--tumblr api -->
+    <script type='text/javascript' src='http://twcbarbershop.tumblr.com//api/read/json?number=5&type=photo'></script>
+
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -24,7 +27,7 @@
     <script type="text/javascript" src="./slick/slick.min.js"></script>
 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/events.css">
 </head>
 
 <body id="home" class="dark-bg">
@@ -75,50 +78,16 @@
 
   <div class="page light-bg centered-90">
     <div class="content">
-        <div class="h1 title">
-          CONTACT
-        </div>
-        <div class="p description">
-          To schedule an appointment call us, or use our online appointment page found here!
-        </div>
-        <div class="span spacer"></div>
-        <div class="p description spacer">
-          <strong>PHONE:</strong> 732-463-1434
-        </div>
-        <div class="p description">
-          <strong>EMAIL:</strong> info@twcbarbershop.com (inquiries only)
-        </div>
-        <div class="span spacer"></div>
-        <div class="p description" id="hours">
-          <strong>HOURS:</strong>
-        </div>
-        <div class="p2 description">
-          Monday - Closed
-        </div>
-        <div class="p2 description">
-          Tuesday - 9:00am to 9:00pm
-        </div>
-        <div class="p2 description">
-          Wednesday - 9:00am to 9:00pm
-        </div>
-        <div class="p2 description">
-          Thursday - 9:00am to 9:00pm
-        </div>
-        <div class="p2 description">
-          Friday - 9:00am to 10:00pm
-        </div>
-        <div class="p2 description">
-          Saturday - 8:00am to 7:00pm
-        </div>
-        <div class="p2 description">
-          Sunday - Closed
-        </div>
-        <div class="span spacer"></div>
-        <iframe
-          class="map"
-          id = "map"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCXZeY3M16XV9zmLlI-V3w9OVtoVyMF4T8&q=55+Rockefeller+Road+Unit+20,Piscataway,New+Jersey" allowfullscreen>
-        </iframe>
+      <div class="h1 title">
+        NEWS/EVENTS
+      </div>
+      <div class='tumblr spacer'>
+          <div class='tumblr-post'><a class="post-link" href=''><img class="post-photo" border='3' style='margin:3px' src='' alt='' /></a><div class="post-text p2 description"></div><hr><br></div>
+          <div class='tumblr-post'><a class="post-link" href=''><img class="post-photo" border='3' style='margin:3px' src='' alt='' /></a><div class="post-text p2 description"></div><hr><br></div>
+          <div class='tumblr-post'><a class="post-link" href=''><img class="post-photo" border='3' style='margin:3px' src='' alt='' /></a><div class="post-text p2 description"></div><hr><br></div>
+          <div class='tumblr-post'><a class="post-link" href=''><img class="post-photo" border='3' style='margin:3px' src='' alt='' /></a><div class="post-text p2 description"></div><hr><br></div>
+          <div class='tumblr-post'><a class="post-link" href=''><img class="post-photo" border='3' style='margin:3px' src='' alt='' /></a><div class="post-text p2 description"></div><hr><br></div>
+      </div>
     </div>
     <div class="container">
       <div class="row padded-cols spacer">
@@ -158,6 +127,13 @@
         $('.navbar').removeClass("affix");
         $('.red-bg').removeClass("affix");
       }
+    });
+    var i = 0;
+    $('.tumblr').children().each(function(){
+      $(this).find('.post-link').attr('href', tumblr_api_read.posts[i]['url-with-slug']);
+      $(this).find('.post-photo').attr('src', tumblr_api_read.posts[i]['photo-url-500']);
+      $(this).find('.post-text').html(tumblr_api_read.posts[i]['photo-caption']);
+      i++;
     });
   </script>
 </body>
