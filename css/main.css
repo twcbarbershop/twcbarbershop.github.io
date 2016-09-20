@@ -260,7 +260,18 @@ hr.sep {
     font-size: 1.4vw;
   }
 }
+@media (min-width: 481px) {
+  .mobile-only {
+    display: none;
+  }
+}
 
+@media (max-width:480px) {
+  .mobile-only {
+    display: block;
+  }
+
+}
 
 @media (max-width: 480px) {
   .link-container {
