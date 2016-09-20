@@ -5,6 +5,13 @@
   --white: #fff;
 }
 
+.footer p {
+  color:#eee;
+  text-align:right;
+  padding-right:5vw;
+  font-family: "Graduate", cursive !important;
+}
+
 .header {
 	height: 9vh;
 	width: 100%;
