@@ -279,6 +279,22 @@ hr.sep {
     display: block;
   }
 
+
+  .icon{
+    height: 10vw;
+    display: inline-block;
+    opacity: .75;
+  }
+
+  .connect {
+    height: auto;
+    line-height: 11vw;
+  }
+
+  .contact {
+    margin-bottom: 2%;
+  }
+
   nav.navbar {
   	z-index: 100;
   	width: 100%;
@@ -290,5 +306,9 @@ hr.sep {
 
   .cover-slider {
     border-style: none !important;
+  }
+
+  .p2 {
+    font-size: 2rem !important;
   }
 }
