@@ -15,3 +15,9 @@
 a{
   color:red;
 }
+
+.no-events {
+  font-size: 2rem;
+  margin-left: 5%;
+  margin-top: 2%;
+}
