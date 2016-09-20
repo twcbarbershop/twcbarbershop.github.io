@@ -5,11 +5,13 @@
   --white: #fff;
 }
 
+@media (min-width:481px) {
 .vcenter {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
 
   display: flex;
   align-items: center;
+}
 }
 
 .footer p {
