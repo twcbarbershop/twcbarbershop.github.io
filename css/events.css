@@ -1,0 +1,17 @@
+.tumblr{
+  width:100%;
+}
+
+.tumblr-post{
+  width:50%;
+  max-width:500px;
+  margin:auto;
+}
+
+.tumblr-photo{
+  width:100%;
+}
+
+a{
+  color:red;
+}
