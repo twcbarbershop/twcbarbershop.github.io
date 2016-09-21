@@ -24,6 +24,7 @@
     <script type="text/javascript" src="./slick/slick.min.js"></script>
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body id="home" class="dark-bg">
@@ -73,51 +74,63 @@
   </nav>
 
   <div class="page light-bg centered-90">
-    <div class="content">
-        <img class="main-image" src="img/about_main.jpg" />
-        <div class="h1 title">
-          ABOUT
-        </div>
-        <div class="p description">
-          The Wright Cut offers a platform that is unparalleled to its competitors, providing employment opportunities for both male and female professionals and student cosmetologists. The facility will provide an atmosphere that creates quality grade a service that will bring comfort and appreciation to its customers. in addition, the wright cut will enhance the academic, socialistic and economic growth of the entire Rutgers community. furthermore, it will be a place of fellowship for mentoring and guidance, between the customer and service provider.
-        </div>
-        <div class = "container sub-content">
-          <div class="row padded-cols spacer vcenter">
-            <div class="col-xs-12 col-sm-5">
-              <img class="sub-image" src="img/about_sub_1.jpg" />
-            </div>
-            <div class="col-xs-12 col-sm-7">
-              <div class="h2 sub-title">
-                OUR STAFF
-              </div>
-              <div class="p description">
-                Our staff strives to bring you a perfect haircut every time.  We pride ourselves in exceptional customer service and attention to detail.
-              </div>
-            </div>
-          </div>
-          <div class="row padded-cols spacer vcenter">
-            <div class="col-xs-12 col-sm-7">
-              <div class="h2 sub-title">
-                TIM WRIGHT
-              </div>
-              <div class="p description">
-                Tim Wright is a Superbowl winning tight end for the Detroit Lions.  Tim grew up in New Jersey and played football for Rutgers as a wide receiver.
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-5">
-              <img class="sub-image" src="img/about_sub_2.jpg" />
-            </div>
-          </div>
-        </div>
+    <div class="cover-slider">
+      <div class="img-1"></div>
+      <div class="img-2"></div>
+      <div class="img-3"></div>
+      <!--div class="img-4"></div>
+      <div class="img-5"></div>
+      <div class="img-6"></div-->
+    </div>
 
+    <div class="container">
+      <!--div class="row">
+        <div class="col-xs-12">
+            <img class="cnt_img" src="img/logo.png">
+        </div>
+      </div-->
+
+      <div class="row padded-cols">
+        <div class="col-xs-12 col-sm-5 connect">
+            <center>
+              <a target="_blank" href="https://www.facebook.com/twcbarbershop/"><img src="img/facebook.svg" class="icon"></a>
+              <a target="_blank" href="https://www.instagram.com/TWCBS/"><img src="img/instagram.svg" class="icon"></a>
+              <a target="_blank" href="https://www.twitter.com/thewrightcutbs/"><img src="img/twitter.svg" class="icon"></a>
+              <a target="_blank" href="https://www.snapchat.com/add/TWCBS/"><img src="img/snapchat.svg" class="icon"></a>
+              <a id="ps"><img src="img/periscope.svg" class="icon"></a>
+              <a target="_blank" href="https://www.pinterest.com/TWCBarberShop/"><img src="img/pinterest.svg" class="icon"></a>
+              <a target="_blank" href="https://twcbarbershop.tumblr.com/"><img src="img/tumblr.svg" class="icon"></a>
+            </center>
+        </div>
+        <div class="col-xs-12 col-sm-7 contact">
+          <center>
+            <div class="p2">info@twcbarbershop.com</div>
+            <div class="p2"><hr class="sep"></div>
+            <div class="p2">55 Rockafeller Road Unit #20</div>
+            <div class="p2">Piscataway, NJ</div>
+          </center>
+        </div>
+      </div>
     </div>
   </div>
 
   <footer class="footer">
-    <p>© Copyright 2016 Timothy Wright</p>
+    <p style="color:#eee;text-align:right;padding-right:5vw;">© Copyright 2016 Timothy Wright</p>
   </footer>
 
   <script type="text/javascript">
+    $('document').ready(function() {
+      $('.cover-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+      });
+    });
+
     $(window).scroll(function() {
       if ($(this).scrollTop() > $('.header').height()){
         $('.navbar').addClass("affix");

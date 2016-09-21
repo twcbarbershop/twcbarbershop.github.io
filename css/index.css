@@ -14,8 +14,8 @@
 
 .cover-slider div {
   background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
   background-position: center !important;
+  background-size: cover !important;
   height: 30vw;
   min-height:20vh;
   width: 100%;
@@ -27,16 +27,16 @@
 }
 
 .cover-slider .img-1 {
-  background: url("http://placehold.it/2000x1000");
+  background: url("../img/tim_shop_front_crop.jpg");
 }
 
 .cover-slider .img-2 {
-  background: url("http://placehold.it/2001x1000");
+  background: url("../img/rutgers_university_1.jpg");
 }
 
 
 .cover-slider .img-3 {
-  background: url("http://placehold.it/2002x1000");
+  background: url("../img/wrightcut_sign.jpg");
 }
 
 
@@ -54,12 +54,8 @@
   background: url("http://placehold.it/2005x1000");
 }
 
-.place-1140x400 {
-  background-attachment: fixed !important;
-  background-position: center !important;
-  height: 400px;
-  background: url("http://placehold.it/1140x400");
-  display: block !important;
+.cnt-img {
+
 }
 
 @media (max-width: 480px) {
@@ -72,7 +68,7 @@
   }
 
   .place-1140x400 {
-    background-attachment: local !important;
+    background-attachment: fixed !important;
     background-repeat: no-repeat !important;
   }
 }

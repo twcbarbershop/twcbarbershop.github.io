@@ -13,6 +13,9 @@
     <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+    <!--tumblr api -->
+    <script type='text/javascript' src='http://twcbarbershop.tumblr.com//api/read/json?number=5&type=photo'></script>
+
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -24,6 +27,7 @@
     <script type="text/javascript" src="./slick/slick.min.js"></script>
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/events.css">
 </head>
 
 <body id="home" class="dark-bg">
@@ -74,47 +78,23 @@
 
   <div class="page light-bg centered-90">
     <div class="content">
-        <img class="main-image" src="img/about_main.jpg" />
-        <div class="h1 title">
-          ABOUT
-        </div>
-        <div class="p description">
-          The Wright Cut offers a platform that is unparalleled to its competitors, providing employment opportunities for both male and female professionals and student cosmetologists. The facility will provide an atmosphere that creates quality grade a service that will bring comfort and appreciation to its customers. in addition, the wright cut will enhance the academic, socialistic and economic growth of the entire Rutgers community. furthermore, it will be a place of fellowship for mentoring and guidance, between the customer and service provider.
-        </div>
-        <div class = "container sub-content">
-          <div class="row padded-cols spacer vcenter">
-            <div class="col-xs-12 col-sm-5">
-              <img class="sub-image" src="img/about_sub_1.jpg" />
-            </div>
-            <div class="col-xs-12 col-sm-7">
-              <div class="h2 sub-title">
-                OUR STAFF
-              </div>
-              <div class="p description">
-                Our staff strives to bring you a perfect haircut every time.  We pride ourselves in exceptional customer service and attention to detail.
-              </div>
-            </div>
-          </div>
-          <div class="row padded-cols spacer vcenter">
-            <div class="col-xs-12 col-sm-7">
-              <div class="h2 sub-title">
-                TIM WRIGHT
-              </div>
-              <div class="p description">
-                Tim Wright is a Superbowl winning tight end for the Detroit Lions.  Tim grew up in New Jersey and played football for Rutgers as a wide receiver.
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-5">
-              <img class="sub-image" src="img/about_sub_2.jpg" />
-            </div>
-          </div>
-        </div>
+      <div class="h1 title">
+        NEWS/EVENTS
+      </div>
 
+      <p class="no-events">No events right now, check back later or <a target="_blank" href="https://www.twitter.com/thewrightcutbs/">follow us on twitter</a> to keep up to date.</p>
+      <div class='tumblr spacer'>
+          <div class='tumblr-post'><a class="post-link" href=''><img class="post-photo" border='3' style='margin:3px' src='' alt='' /></a><div class="post-text p2 description"></div><hr><br></div>
+          <div class='tumblr-post'><a class="post-link" href=''><img class="post-photo" border='3' style='margin:3px' src='' alt='' /></a><div class="post-text p2 description"></div><hr><br></div>
+          <div class='tumblr-post'><a class="post-link" href=''><img class="post-photo" border='3' style='margin:3px' src='' alt='' /></a><div class="post-text p2 description"></div><hr><br></div>
+          <div class='tumblr-post'><a class="post-link" href=''><img class="post-photo" border='3' style='margin:3px' src='' alt='' /></a><div class="post-text p2 description"></div><hr><br></div>
+          <div class='tumblr-post'><a class="post-link" href=''><img class="post-photo" border='3' style='margin:3px' src='' alt='' /></a><div class="post-text p2 description"></div><hr><br></div>
+      </div>
     </div>
   </div>
 
   <footer class="footer">
-    <p>© Copyright 2016 Timothy Wright</p>
+    <p style="color:#eee;text-align:right;padding-right:5vw;">© Copyright 2016 Timothy Wright</p>
   </footer>
 
   <script type="text/javascript">
@@ -126,6 +106,13 @@
         $('.navbar').removeClass("affix");
         $('.red-bg').removeClass("affix");
       }
+    });
+    var i = 0;
+    $('.tumblr').children().each(function(){
+      $(this).find('.post-link').attr('href', tumblr_api_read.posts[i]['url-with-slug']);
+      $(this).find('.post-photo').attr('src', tumblr_api_read.posts[i]['photo-url-500']);
+      $(this).find('.post-text').html(tumblr_api_read.posts[i]['photo-caption']);
+      i++;
     });
   </script>
 </body>

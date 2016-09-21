@@ -5,6 +5,20 @@
   --white: #fff;
 }
 
+.vcenter {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+
+  display: flex;
+  align-items: center;
+}
+
+.footer p {
+  color:#eee;
+  text-align:right;
+  padding-right:5vw;
+  font-family: "Graduate", cursive !important;
+}
+
 .header {
 	height: 9vh;
 	width: 100%;
@@ -40,6 +54,7 @@
 	height: 100%;
 	width: 13.1vh;
 	min-width: 72px;
+  padding: 2px;
 }
 
 .logo-container {
@@ -59,7 +74,7 @@
 .header-link{
   margin-top:1.5vh;
   margin-right:20px;
-  font-size:1.5rem;
+  font-size:2rem;
   vertical-align: middle;
   float:right;
   color:red;
@@ -166,10 +181,18 @@ li{
   margin-top:30px;
 }
 
+.span{
+  width:100%;
+  height:10px;
+}
+
+.gray-bg {
+  background-color: #C8C8C8;
+}
+
 .connect{
   height:300px;
   line-height:300px;
-  background-color: #C8C8C8;
   display: block !important;
 }
 
@@ -178,7 +201,6 @@ li{
   height:300px;
   line-height:50px;
   vertical-align:middle;
-  background-color: #C8C8C8;
   display: block !important;
 }
 
@@ -186,6 +208,15 @@ li{
   height: 60px;
   display: inline-block;
   opacity: .75;
+}
+
+hr.sep {
+  display:block;
+  border:none;
+  color:white;
+  height:1px;
+  background:black;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
 }
 
 .icon:hover{
