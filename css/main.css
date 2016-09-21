@@ -46,7 +46,7 @@
 
 .p2{
     font-family: "Arvo", serif;
-    font-size: 30px;
+    font-size: 2.2vmin;
     word-wrap: break-word;
 }
 
@@ -206,6 +206,7 @@ li{
 
 .icon{
   height: 60px;
+  max-width:13%;
   display: inline-block;
   opacity: .75;
 }
