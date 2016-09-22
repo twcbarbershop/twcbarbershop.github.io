@@ -210,6 +210,7 @@ li{
 
 .icon{
   height: 60px;
+  max-width:13%;
   display: inline-block;
   opacity: .75;
 }
