@@ -192,18 +192,20 @@ li{
   background-color: #C8C8C8;
 }
 
-.connect{
-  height:300px;
-  line-height:300px;
-  display: block !important;
-}
+@media (min-width: 480px) {
+  .connect{
+    height:300px;
+    line-height:300px;
+    display: block !important;
+  }
 
-.contact{
-  padding-top:50px;
-  height:300px;
-  line-height:50px;
-  vertical-align:middle;
-  display: block !important;
+  .contact{
+    padding-top:50px;
+    height:300px;
+    line-height:50px;
+    vertical-align:middle;
+    display: block !important;
+  }
 }
 
 .icon{
@@ -272,7 +274,6 @@ hr.sep {
   .mobile-only {
     display: block;
   }
-
 }
 
 @media (max-width: 480px) {

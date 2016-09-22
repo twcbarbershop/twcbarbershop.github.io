@@ -34,6 +34,15 @@
   background: url("../img/rutgers_university_1.jpg");
 }
 
+@media (max-width: 480px) {
+  .cover-slider .img-1 {
+    background: url("../img/tim_shop_front_crop_mobile.jpg");
+  }
+
+  .cover-slider .img-2 {
+    background: url("../img/rutgers_university_1_mobile.jpg");
+  }
+}
 
 .cover-slider .img-3 {
   background: url("../img/wrightcut_sign.jpg");
@@ -54,17 +63,13 @@
   background: url("http://placehold.it/2005x1000");
 }
 
-.cnt-img {
-
-}
-
 @media (max-width: 480px) {
   .cover-slider {
-    height: 60vh;
+    height: 90vw;
   }
 
   .cover-slider div {
-    height: 60vh !important;
+    height: 90vw !important;
   }
 
   .place-1140x400 {
