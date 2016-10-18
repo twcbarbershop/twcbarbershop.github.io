@@ -1,12 +1,16 @@
 .form-container *{
   width:100%;
   font-family: "Arvo", serif;
-  font-size: 2.2vmin;
+  font-size: 1.5rem;
 }
 
 .submit{
   margin: 20px;
   font-family: "Arvo", serif;
-  font-size: 2.2vmin;
+  font-size: 1.5rem;
   width: 30%;
+}
+
+.interview{
+    font-family: "Arvo", serif;
 }
